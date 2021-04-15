@@ -1,3 +1,3 @@
 # bootcamp-inter
 
-new test2
+teste com GitHub hook trigger for GITScm polling
