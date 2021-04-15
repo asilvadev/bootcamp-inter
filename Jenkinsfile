@@ -9,15 +9,15 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testando...'
+                echo 'Testando...',
+                script {
+                build job: 'Gatinho pra executar',
+                }
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                script{
-                build job: 'Gatinho pra executar',
-                } 
             }
         }
     }
