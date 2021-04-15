@@ -9,9 +9,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testando...',
-                build job: 'Gatinho pra executar',
-                
+                script{
+                build job: 'Gatinho pra executar'
+                }                
             }
         }
         stage('Deploy') {
