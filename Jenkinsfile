@@ -10,9 +10,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testando...',
-                script {
                 build job: 'Gatinho pra executar',
-                }
+                
             }
         }
         stage('Deploy') {
